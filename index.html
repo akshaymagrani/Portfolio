@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akshay Magrani</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/6baf49cd15.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="header">
@@ -24,10 +25,109 @@
         <p>Front-End Web Developer</p>
         <h1>Hi, I am <span>Akshay</span><br>Magrani from Mumbai, India.</h1>
       </div>
-
-
     </div>
   </div>
+  <!-- -------------about section--------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo non ducimus, quis fugiat deserunt accusantium nam inventore cum id? In placeat quasi ipsam omnis repellendus cupiditate dicta fuga quisquam deleniti.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing  Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2017-2018</span><br>Steel Wing Corporation | Production Engineer</li>
+              <li><span>2018-Current</span><br>KL Automotive and Tubular Products Ltd | Development Engineer</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2013-2017</span><br>B.E Mechanical Engineering</li>
+              <li><span>2011-2013</span><br>Higher Secondary</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------ services -------------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Front End Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est iste iusto suscipit dolore hic ad at aspernatur expedita totam natus corrupti repudiandae, atque quas ut incidunt quisquam numquam vero.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-alt"></i>
+          <h2>Back End Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est iste iusto suscipit dolore hic ad at aspernatur expedita totam natus corrupti repudiandae, atque quas ut incidunt quisquam numquam vero.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est iste iusto suscipit dolore hic ad at aspernatur expedita totam natus corrupti repudiandae, atque quas ut incidunt quisquam numquam vero.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------portfolio---------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work1.png"/>
+        </div>
+        <div class="work">
+          <img src="images/work2.png"/>
+        </div>
+        <div class="work">
+          <img src="images/work3.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
   
+<script>
+
+  var tablinks = document.getElementsByClassName('tab-links');
+  var tabcontents = document.getElementsByClassName('tab-contents');
+
+  function opentab(tabname){
+    for (tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
 </body>
 </html>
