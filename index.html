@@ -12,20 +12,25 @@
   <div id="header">
     <div class="container">
       <nav>
-        <img src="logo.jpg" alt="logo" class="logo"/>
+        <img src="./logo.png" alt="logo" class="logo" title="logo"/>
         <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="https://1drv.ms/w/s!AmYHJtACmlBbik6nvntNLDwePjXa?e=Num1Df" class="btn btn2">Download CV</a></li>
           <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
         <p>Front-End Web Developer</p>
-        <h1>Hi, I am <span>Akshay</span><br>Magrani from Mumbai, India.</h1>
+        <h1>Hi, I am 
+          <div class="container1">
+            <span class="typed">Akshay Magrani</span>
+          </div>
+          from Mumbai, India.</h1>
       </div>
     </div>
   </div>
@@ -38,7 +43,10 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo non ducimus, quis fugiat deserunt accusantium nam inventore cum id? In placeat quasi ipsam omnis repellendus cupiditate dicta fuga quisquam deleniti.
+          <p>
+            As a dedicated and detail-oriented Front-End Web Developer, I am passionate about <span>crafting immersive and intuitive user
+            experiences</span> through innovative and visually appealing web applications. With a foundation in HTML, CSS, and JavaScript,
+            I specialize in leveraging modern frameworks like React to bring designs to life.
           </p>
 
           <div class="tab-titles">
@@ -48,21 +56,22 @@
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>UI/UX</span><br>Designing  Web/App interfaces</li>
+              <li><span>UI/UX</span><br>Developing Web/App interfaces</li>
               <li><span>Web Development</span><br>Web App Development</li>
-              <li><span>App Development</span><br>Building Android/iOS apps</li>
+              <!-- <li><span>App Development</span><br>Building Android/iOS apps</li> -->
             </ul>
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>2017-2018</span><br>Steel Wing Corporation | Production Engineer</li>
-              <li><span>2018-Current</span><br>KL Automotive and Tubular Products Ltd | Development Engineer</li>
+              <!-- <li><span>2017-2018</span><br>Steel Wing Corporation | Production Engineer</li> -->
+              <li><span>2018 - Current</span><br>KL Automotive and Tubular Products Ltd | Development Engineer</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>2013-2017</span><br>B.E Mechanical Engineering</li>
-              <li><span>2011-2013</span><br>Higher Secondary</li>
+              <li><span>2023 - 2026</span><br>B.Sc Computer Science</li>
+              <li><span>2013 - 2017</span><br>B.E Mechanical Engineering</li>
+              <li><span>2011 - 2013</span><br>Higher Secondary</li>
             </ul>
           </div>
         </div>
@@ -70,7 +79,7 @@
     </div>
   </div>
   <!-- ------------ services -------------------->
-  <div id="services">
+  <!-- <div id="services">
     <div class="container">
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
@@ -94,43 +103,43 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- ---------------portfolio---------- -->
   <div id="portfolio">
     <div class="container">
       <h1 class="sub-title">My Works</h1>
       <div class="work-list">
         <div class="work">
-          <img src="images/work1.png" alt="image1"/>
+          <img src="./myWork/multi-step-form-destop.jpg" alt="image1"/>
           <div class="layer">
-            <h3>Social Media App</h3>
-            <p>
-              Description
+            <h3>Multi-Step Form</h3>
+            <p class="description">
+              A responsive multi-step form using HTML, CSS, JavaScript, React and Tailwind CSS for enhanced data collection.
             </p>
-            <a href="#" title="link-icon"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://web-dev-i-multi-step-form-using-react.vercel.app/" title="link-icon"><i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
         <div class="work">
-          <img src="images/work2.png" alt="image1"/>
+          <img src="./myWork/social-media-tracker-desktop.jpg" alt="image1"/>
           <div class="layer">
-            <h3>Social Media App</h3>
-            <p>
+            <h3>Social Media Tracker</h3>
+            <p class="description">
               Description
             </p>
-            <a href="#"title="link-icon"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://web-dev-social-media-dashboard-theme-change-etesjobyo.now.sh/"title="link-icon"><i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
         <div class="work">
-          <img src="images/work3.png" alt="image1"/>
+          <img src="./myWork/countries-around-the-world-desktop.jpg" alt="image3"/>
           <div class="layer">
-            <h3>Social Media App</h3>
-            <p>
+            <h3>Countries around the world</h3>
+            <p class="description">
               Description
             </p>
-            <a href="#" title="link-icon"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://web-dev-a-rest-countries-api-with-color-theme-switcher.vercel.app/" title="link-icon"><i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <!-- <a href="#" class="btn">See More</a> -->
       </div>
     </div>
   </div>
@@ -140,23 +149,30 @@
     <div class="row">
       <div class="contact-left">
         <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fas fa-paper-plane"></i> akshaymagrani1@gmail.com</p>
-        <p><i class="fas fa-phone-square-alt"></i>+91 8830743477</p>
+        <p>
+          <i class="fas fa-paper-plane"></i>
+          akshaymagrani1@gmail.com
+        </p>
+        <p>
+          <i class="fas fa-phone-square-alt"></i>
+          +91 8830743477
+        </p>
         <div class="social-icons">
-          <a href="" title="icons"><i class="fab fa-facebook"></i></a>
+          <!-- <a href="" title="icons"><i class="fab fa-facebook"></i></a>
           <a href="" title="icons"><i class="fab fa-twitter-square"></i></a>
-          <a href="" title="icons"><i class="fab fa-instagram"></i></a>
-          <a href="" title="icons"><i class="fab fa-linkedin"></i></a>
+          <a href="" title="icons"><i class="fab fa-instagram"></i></a> -->
+          <a href="https://www.linkedin.com/in/akshay-magrani" title="icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/akshaymagrani" title="icons"><i class="fab fa-github"></i></a>
         </div>
-        <a href="" class="btn btn2">Download CV</a>
+        <a href="https://1drv.ms/w/s!AmYHJtACmlBbik6nvntNLDwePjXa?e=Num1Df" class="btn btn2">Download CV</a>
         <!-- Add the path to CV in href -->
       </div>
       <div class="contact-right">
-        <form>
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
+        <form method="post" action="https://formsubmit.co/akshaymagrani1@gmail.com">
+          <input type="text" name="Name" placeholder="Your Name" required autocomplete="name">
+          <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
           <textarea type="text" name="Name" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2" title="submit button">Submit</button>
+          <button type="submit" class="btn btn2" title="Submit Button">Submit</button>
         </form>
       </div>
     </div>
