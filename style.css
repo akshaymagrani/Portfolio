@@ -19,7 +19,7 @@ body{
   background-position: center;
 }
 .container{
-  padding: 10px 10%;
+  padding: 10px 5%;
 }
 .container1 {
   font-family: "arial";
@@ -96,9 +96,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
   width: 100%;
 }
-.btn2:hover {
-  pointer-events: none;
-}
 .header-text{
   margin-top: 20%;
   font-size: 30px;
@@ -115,16 +112,21 @@ nav ul li a:hover::after{
 #about{
   padding: 80px 0;
   color: white;
-
+  min-height: 1vh;
 }
 .row{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.about-col-1{
+  flex-basis: 40%;
+}
 .about-col-1 img{
   width: 100%;
+  height: auto;
   border-radius: 15px;
+  padding: 0 1em;
 }
 .about-col-2{
   flex-basis: 60%; /* Will have to learn */
@@ -217,6 +219,7 @@ nav ul li a:hover::after{
 /* -------------portfolio----------- */
 #portfolio{
   padding: 50px 0;
+  min-height: 1vh;
 }
 .work-list{
   display: grid;
@@ -289,6 +292,9 @@ nav ul li a:hover::after{
 }
 
 /* --------contact-------- */
+#contact{
+  min-height: 1vh;
+}
 .contact-left{
   flex-basis: 35%;
 }
@@ -300,7 +306,7 @@ nav ul li a:hover::after{
 }
 .contact-left p i{
   color: #ff004f;
-  margin-right: 15px;
+  margin-right: 10px;
   font-size: 25px;
 }
 .social-icons{
