@@ -21,6 +21,40 @@ body{
 .container{
   padding: 10px 10%;
 }
+.container1 {
+  font-family: "arial";
+  font-size: 60px;
+  display: grid;
+  width: 500px;
+}
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-color: transparent
+  }
+  50% {
+    border-color: #ff004f
+  }
+  100% {
+    border-color: transparent
+  }
+}
 nav{
   display: flex;
   align-items: center;
@@ -28,7 +62,15 @@ nav{
   flex-wrap: wrap;
 }
 .logo{
-  width: 140px;
+  width: 80px;
+  background-color: #080808;
+}
+.logo:hover {
+  transform: translate(5px, 5px);
+  box-shadow: -2px -2px #ff004f;
+}
+.logo {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 nav ul li{
   display: inline-block;
@@ -54,6 +96,9 @@ nav ul li a::after{
 nav ul li a:hover::after{
   width: 100%;
 }
+.btn2:hover {
+  pointer-events: none;
+}
 .header-text{
   margin-top: 20%;
   font-size: 30px;
@@ -65,10 +110,11 @@ nav ul li a:hover::after{
 .header-text h1 span{
   color: #ff004f;
 }
+
 /* -----about section ------------ */
 #about{
   padding: 80px 0;
-  color: #ababab;
+  color: white;
 
 }
 .row{
@@ -85,6 +131,9 @@ nav ul li a:hover::after{
 }
 .sub-title{
   font-size: 60px;
+}
+.sub-title:first-child{
+  padding: 0 0 1em;
 }
 .tab-titles{
   display: flex;
@@ -124,6 +173,7 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
   display: block;
 }
+
 /* -------------------services ----------------- */
 #services{
   padding: 30px 0;
@@ -163,13 +213,14 @@ nav ul li a:hover::after{
   background: #ff004f;
   transform: translateY(-10px);
 }
+
 /* -------------portfolio----------- */
 #portfolio{
   padding: 50px 0;
 }
 .work-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40%,1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -236,6 +287,7 @@ nav ul li a:hover::after{
 .btn:hover{
   background: #ff004f;
 }
+
 /* --------contact-------- */
 .contact-left{
   flex-basis: 35%;
@@ -291,6 +343,7 @@ form .btn2{
   margin-top: 20px;
   cursor: pointer;
 }
+
 /* ------CSS for small screens ------ */
 nav .fas{
   display: none;
@@ -348,9 +401,21 @@ nav .fas{
     font-size: 16px;
     margin-right: 20px;
   }
-
   .contact-left,.contact-right{
     flex-basis: 100%;
   }
-
+  .work-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .description{
+    display: none;
+  }
+  .container1 {
+    width: 85%;
+    font-size: 30px;
+  }
+  .btn {
+    padding: 14px 14px;
+    border: 1px solid white;
+  }
 }
