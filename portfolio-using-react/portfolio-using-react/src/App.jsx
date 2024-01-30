@@ -12,6 +12,9 @@ function App() {
       <About />
       <Projects />
       <ContactMe />
+      <a href='#header' className='bg-white rounded w-12 h-10 p-3 text-black fixed bottom-3 right-3'>
+        Home
+      </a>
     </>
   )
 }

@@ -1,11 +1,11 @@
 export default function Projects() {
     return (
-        <div id="portfolio">
+        <div id="projects">
             <div className="container">
                 <h2 className="sub-title">My Works</h2>
                 <div className="work-list">
                     <div className="work">
-                        <img src="./myWork/multi-step-form-destop.jpg" alt="image1" />
+                        <img src="./src/assets/multi-step-form-destop.jpg" alt="image1" />
                         <div className="layer">
                             <h3>Multi-Step Form</h3>
                             <p className="description">
@@ -15,7 +15,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="work">
-                        <img src="./myWork/countries-around-the-world-desktop.jpg" alt="image3" />
+                        <img src="./src/assets/countries-around-the-world-desktop.jpg" alt="image3" />
                         <div className="layer">
                             <h3>Countries around the world</h3>
                             <p className="description">
@@ -27,7 +27,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="work">
-                        <img src="./myWork/social-media-tracker-desktop.jpg" alt="image1" />
+                        <img src="./src/assets/social-media-tracker-desktop.jpg" alt="image1" />
                         <div className="layer">
                             <h3>Social Media Tracker</h3>
                             <p className="description">

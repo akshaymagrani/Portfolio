@@ -2,7 +2,7 @@
 
 export default function ContactMe() {
     return (
-        <div id="contact">
+        <div id="contactMe">
             <div className="container">
                 <div className="row">
                     <div className="contact-left">
