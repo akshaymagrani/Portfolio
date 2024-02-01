@@ -1,4 +1,17 @@
 export default function About() {
+    // var tablinks = document.getElementsByClassName('tab-links');
+    // var tabcontents = document.getElementsByClassName('tab-contents');
+
+    // function opentab(tabname) {
+    //     for (tablink of tablinks) {
+    //         tablink.classList.remove("active-link");
+    //     }
+    //     for (tabcontent of tabcontents) {
+    //         tabcontent.classList.remove("active-tab");
+    //     }
+    //     event.currentTarget.classList.add("active-link");
+    //     document.getElementById(tabname).classList.add("active-tab");
+    // }
     return (
         <div id="about">
             <div className="container">
@@ -16,9 +29,9 @@ export default function About() {
                         </p>
 
                         <div className="tab-titles">
-                            <h3 className="tab-links active-link" onClick="opentab('skills')">Skills</h3>
-                            <h3 className="tab-links" onClick="opentab('experience')">Experience</h3>
-                            <h3 className="tab-links" onClick="opentab('education')">Education</h3>
+                            <h3 className="tab-links active-link" /* onClick={opentab('skills')}*/>Skills</h3>
+                            <h3 className="tab-links" /* onClick={opentab('experience')}*/>Experience</h3>
+                            <h3 className="tab-links" /* onClick={opentab('education')}*/>Education</h3>
                         </div>
                         <div className="tab-contents active-tab" id="skills">
                             <ul>
@@ -28,7 +41,7 @@ export default function About() {
                         </div>
                         <div className="tab-contents" id="experience">
                             <ul>
-                                <li><span>2018 - Current</span><br />KL Automotive and Tubular Products Ltd | Development Engineer</li>
+                                <li><span>2018 - Current</span><br />KLT Automotive and Tubular Products Ltd | Development Engineer</li>
                             </ul>
                         </div>
                         <div className="tab-contents" id="education">

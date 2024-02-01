@@ -2,6 +2,7 @@
 
 export default function ContactMe() {
     return (
+        <>
         <div id="contactMe">
             <div className="container">
                 <div className="row">
@@ -30,9 +31,10 @@ export default function ContactMe() {
                     </div>
                     </div>
             </div>
-            <div className="copyright">
-                <p>Copyright @akshaymagrani</p>
-            </div>
         </div>
+        <div className="copyright">
+                <p>Copyright @akshaymagrani</p>
+        </div>
+        </>
     )
 }

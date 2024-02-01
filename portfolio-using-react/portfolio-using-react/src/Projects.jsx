@@ -4,7 +4,7 @@ export default function Projects() {
             <div className="container">
                 <h2 className="sub-title">My Works</h2>
                 <div className="work-list">
-                    <div className="work">
+                    <div className="work max-w-[350px]">
                         <img src="./src/assets/multi-step-form-destop.jpg" alt="image1" />
                         <div className="layer">
                             <h3>Multi-Step Form</h3>
@@ -14,8 +14,8 @@ export default function Projects() {
                             <a href="https://web-dev-i-multi-step-form-using-react.vercel.app/" title="link-icon"><i className="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <div className="work">
-                        <img src="./src/assets/countries-around-the-world-desktop.jpg" alt="image3" />
+                    <div className="work max-w-[350px]">
+                        <img src="./src/assets/gael-gaborel-orbisterrae-G_MCcG2YqPQ-unsplash.jpg" alt="image3" />
                         <div className="layer">
                             <h3>Countries around the world</h3>
                             <p className="description">
@@ -26,8 +26,8 @@ export default function Projects() {
                                 className="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <div className="work">
-                        <img src="./src/assets/social-media-tracker-desktop.jpg" alt="image1" />
+                    <div className="work max-w-[350px]">
+                        <img src="./src/assets/alexander-shatov-mr4JG4SYOF8-unsplash.jpg" alt="image1" />
                         <div className="layer">
                             <h3>Social Media Tracker</h3>
                             <p className="description">
