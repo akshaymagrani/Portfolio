@@ -2,7 +2,7 @@ export default function Projects() {
     return (
         <div id="projects">
             <div className="container">
-                <h2 className="sub-title">My Works</h2>
+                <h2 className="sub-title py-4 highlight">My Works</h2>
                 <div className="work-list">
                     <div className="work max-w-[350px]">
                         <img src="./src/assets/multi-step-form-destop.jpg" alt="image1" />

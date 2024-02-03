@@ -94,9 +94,26 @@ nav ul li a:hover::after {
   color: #ff004f;
 }
 
+.highlight{
+  position: relative;
+}
+
+.highlight:before{
+  content: "";
+  width: 50%;
+  height: 20px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  z-index: -1;
+}
+
 /* -----about section ------------ */
 #about {
-  padding: 80px 0;
+  padding: 80px 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 .row {
@@ -106,27 +123,24 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 {
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 
 .about-col-1 img {
   width: 100%;
+  max-width: 550px;
   height: auto;
   border-radius: 15px;
   padding: 0 1em;
 }
 
 .about-col-2 {
-  flex-basis: 60%;
+  flex-basis: 50%;
   /* Will have to learn */
 }
 
 .sub-title {
   font-size: 60px;
-}
-
-.sub-title:first-child {
-  padding: 0 0 1em;
 }
 
 .tab-titles {
@@ -219,8 +233,8 @@ nav ul li a:hover::after {
 }
 
 /* -------------portfolio----------- */
-#portfolio {
-  padding: 50px 0;
+#projects {
+  padding: 80px 0 0;
 }
 
 .work-list {
@@ -357,9 +371,8 @@ nav ul li a:hover::after {
 form input,
 form textarea {
   width: 100%;
-  border: 0;
+  border: 1px solid grey;
   outline: none;
-  background: #262626;
   padding: 15px;
   margin: 15px 0;
   font-size: 18px;
@@ -465,4 +478,11 @@ nav .fas {
     padding: 14px 14px;
     border: 1px solid white;
   }
+}
+
+.active{
+  text-decoration: underline;
+}
+.active, .pending{
+  padding: 1em;
 }

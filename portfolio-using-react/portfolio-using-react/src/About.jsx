@@ -17,11 +17,11 @@ export default function About() {
             <div className="container">
                 <div className="row">
                     <div className="about-col-1">
-                        <img src="./myWork/an illustration of an innovative entrepreneur man .jpg" alt="image" className="about-me-img" />
+                        <img src="./src/assets/an illustration of an innovative entrepreneur man .jpg" alt="image" className="about-me-img" />
                     </div>
                     <div className="about-col-2">
-                        <h2 className="sub-title">About Me</h2>
-                        <p>
+                        <h2 className="sub-title py-4 highlight">About Me</h2>
+                        <p className="max-w-96">
                             As a dedicated and detail-oriented Front-End Web Developer, I am passionate about 
                             <span>crafting immersive and intuitive user experiences</span> 
                             through innovative and visually appealing web applications. With a foundation in HTML, CSS, and JavaScript,

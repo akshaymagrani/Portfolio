@@ -7,7 +7,7 @@ export default function ContactMe() {
             <div className="container">
                 <div className="row">
                     <div className="contact-left">
-                        <h2 className="sub-title">Contact Me</h2>
+                            <h2 className="sub-title py-12">Contact Me</h2>
                         <p>
                             <i className="fas fa-paper-plane"></i>akshaymagrani1@gmail.com
                         </p>
