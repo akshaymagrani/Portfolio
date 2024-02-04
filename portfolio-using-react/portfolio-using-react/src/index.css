@@ -486,3 +486,11 @@ nav .fas {
 .active, .pending{
   padding: 1em;
 }
+
+.fade-in{
+  opacity: 0;
+}
+
+.fade-out {
+  opacity: 1;
+}

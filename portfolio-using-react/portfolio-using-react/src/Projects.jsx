@@ -1,4 +1,5 @@
-export default function Projects() {
+import transition from "./transition"
+function Projects() {
     return (
         <div id="projects">
             <div className="container">
@@ -41,3 +42,5 @@ export default function Projects() {
         </div>
     )
 }
+
+export default transition(Projects)

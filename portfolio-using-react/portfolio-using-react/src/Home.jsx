@@ -1,4 +1,5 @@
-export default function Home() {
+import transition from "./transition"
+function Home() {
     // var sidemenu = document.getElementById("sidemenu");
 
     // function openmenu() {
@@ -22,3 +23,5 @@ export default function Home() {
         </div>
     )
 }
+
+export default transition(Home);

@@ -1,4 +1,5 @@
-export default function About() {
+import transition from "./transition"
+function About() {
     // var tablinks = document.getElementsByClassName('tab-links');
     // var tabcontents = document.getElementsByClassName('tab-contents');
 
@@ -57,3 +58,5 @@ export default function About() {
         </div>
     )
 }
+
+export default transition(About);
