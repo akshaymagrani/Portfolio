@@ -1,16 +1,10 @@
 import transition from "./transition"
-function Home() {
-    // var sidemenu = document.getElementById("sidemenu");
-
-    // function openmenu() {
-    //     sidemenu.style.right = "0";
-    // }
-    // function closemenu() {
-    //     sidemenu.style.right = "-200px";
-    // }
+function Home(props) {
+    console.log(props.theme);
+    
 
     return (
-        <div id="header">
+        <div id="header" className={`${props.theme ? 'theme__light' : 'theme__dark'}`}>
             <div className="container">
                 <div className="header-text">
                     <p>Front-End Web Developer</p>
@@ -24,4 +18,4 @@ function Home() {
     )
 }
 
-export default transition(Home);
+export default Home;

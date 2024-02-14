@@ -109,6 +109,25 @@ nav ul li a:hover::after {
   z-index: -1;
 }
 
+nav.theme__dark{
+  background-color: hsl(240, 4%, 16%);
+  color: white;
+}
+
+nav.theme__dark svg {
+  fill: white;
+}
+
+div.theme__dark {
+  background-color: #352f44;
+  color: white;
+}
+
+nav.theme__light, div.theme__light{
+  background-color: white;
+  color: hsl(240, 4%, 16%);
+}
+
 /* -----about section ------------ */
 #about {
   padding: 80px 0 0;
@@ -292,10 +311,6 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
-/* .work:hover img {
-  transform: scale(1.1);
-} */
-
 .work:hover .layer {
   width: 50%;
   display: flex;
@@ -405,21 +420,33 @@ nav .fas {
     font-size: 30px;
   }
 
-  nav .fas {
-    display: block;
-    font-size: 25px;
+  .hamburger{
+    display: inline-block;
+  }
+  .times{
+    z-index: 2;
+  }
+  .times, .hamburger{
+    width: 20px;
+    height: 20px;
   }
 
-  nav ul {
+  .close {
+    display: none;
+    right: -200px;
+  }
+  .open {
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -200px;
+    right: 0px;
     width: 200px;
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 20px;
     z-index: 2;
-    transition: right 0.5s;
+    display: flex;
+    flex-direction: column;
+    transition: display right 0.5s;
   }
 
   nav ul li {
@@ -487,10 +514,8 @@ nav .fas {
   padding: 1em;
 }
 
-.fade-in{
-  opacity: 0;
-}
-
-.fade-out {
-  opacity: 1;
+@media only screen and (min-width:600px) {
+  .times, .hamburger{
+    display: none;
+  }
 }

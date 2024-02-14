@@ -19,10 +19,10 @@ function App() {
       <Nav handleTheme={handleTheme} theme={theme} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contactme" element={<ContactMe />} />
+          <Route index element={<Home theme={theme} />} />
+          <Route path="/about" element={<About theme={theme} />} />
+          <Route path="/projects" element={<Projects theme={theme} />} />
+          <Route path="/contactme" element={<ContactMe theme={theme} />} />
         </Routes>
       </AnimatePresence>
     </>
