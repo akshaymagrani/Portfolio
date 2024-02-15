@@ -1,9 +1,9 @@
 // import { Form } from 'react-router-dom';
 import transition from "./transition"
-function ContactMe() {
+function ContactMe(props) {
     return (
         <div>
-            <div id="contactMe">
+            <div id="contactMe" className={`${props.theme ? 'theme__light' : 'theme__dark'}`}>
                 <div className="container">
                     <div className="row">
                         <div className="contact-left">
@@ -39,4 +39,4 @@ function ContactMe() {
     )
 }
 
-export default transition(ContactMe);
+export default ContactMe;

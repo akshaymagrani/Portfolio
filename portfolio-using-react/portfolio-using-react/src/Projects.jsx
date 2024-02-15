@@ -1,7 +1,7 @@
 import transition from "./transition"
-function Projects() {
+function Projects(props) {
     return (
-        <div id="projects">
+        <div id="projects" className={`${props.theme ? 'theme__light' : 'theme__dark'}`}>
             <div className="container">
                 <h2 className="sub-title py-4 highlight">My Works</h2>
                 <div className="work-list">
@@ -43,4 +43,4 @@ function Projects() {
     )
 }
 
-export default transition(Projects)
+export default Projects;

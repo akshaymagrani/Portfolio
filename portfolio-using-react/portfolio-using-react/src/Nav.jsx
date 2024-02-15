@@ -10,8 +10,9 @@ export default function Nav(props) {
 
     return (
         <>
-            <nav id="nav" className={`fixed top-0 flex justify-between w-full z-10 ${props.theme ? 'theme__light': 'theme__dark'}`}>
-                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 mr-auto">
+            <nav id="nav" className={`fixed top-0 w-full z-10 ${props.theme ? 'theme__light': 'theme__dark'} dark shadow dark:shadow`}>
+                <div className="flex justify-between container items-center">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 mr-auto">
                     <path fillRule="evenodd" clipRule="evenodd" d="M12.0001 3.75317L21.5509 20.2501H2.44922L12.0001 3.75317ZM5.05089 18.7501H18.9492L12.0001 6.74697L5.05089 18.7501Z" className="fill-[#ff004f] mr-auto" />
                 </svg>
                 <summary className="_no-triangle focus:border-200 flex h-[40px] w-[40px] items-center justify-center rounded-full border border-transparent focus:border">
@@ -27,7 +28,7 @@ export default function Nav(props) {
                 </summary>
                 
                 <ul id="sidemenu" className={`${sideMenuState ? 'open': 'close'}`}>
-                    <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" onClick={openmenu} className={`w-10 h-10 times m-3`}>
+                    <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" onClick={openmenu} className={`w-10 h-10 times m-3 hover:shadow rounded border-slate-300`}>
                         <title>times</title>
                         <path d="M17.062 16l9.37-9.37c0.136-0.136 0.219-0.323 0.219-0.53 0-0.415-0.336-0.751-0.751-0.751-0.208 0-0.395 0.084-0.531 0.22v0l-9.369 9.369-9.37-9.369c-0.135-0.131-0.319-0.212-0.522-0.212-0.414 0-0.75 0.336-0.75 0.75 0 0.203 0.081 0.387 0.212 0.522l9.368 9.369-9.369 9.369c-0.136 0.136-0.22 0.324-0.22 0.531 0 0.415 0.336 0.751 0.751 0.751 0.207 0 0.394-0.084 0.53-0.219v0l9.37-9.37 9.369 9.37c0.136 0.136 0.324 0.22 0.531 0.22 0.415 0 0.751-0.336 0.751-0.751 0-0.207-0.084-0.395-0.22-0.531v0z"></path>
                     </svg>
@@ -72,15 +73,14 @@ export default function Nav(props) {
                             }>Contact
                     </NavLink>
                     <li>
-                        <a href="https://1drv.ms/w/s!AmYHJtACmlBbik6nvntNLDwePjXa?e=Num1Df" className="btn btn2" target="_blank">Download CV
+                        <a href="https://1drv.ms/w/s!AmYHJtACmlBbik6nvntNLDwePjXa?e=Num1Df" className={`${props.theme ? 'border-black text-black' : 'dark:border-white dark:text-white'} border p-3 rounded`} target="_blank">Download CV
                         </a>
                     </li>
                 </ul>
-                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={openmenu} className="w-10 h-10 hamburger m-3">
-                    <path d="M4 18H10" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                    <path d="M4 12L16 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" onClick={openmenu} className="m-3 w-10 h-10 hamburger rounded hover:border-spacing-3 hover:border-slate-300">
+                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
                 </svg>
+                </div>
             </nav>
         </>
     )

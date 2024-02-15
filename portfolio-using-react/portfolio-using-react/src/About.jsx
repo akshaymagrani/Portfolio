@@ -1,5 +1,5 @@
 import transition from "./transition"
-function About() {
+function About(props) {
     // var tablinks = document.getElementsByClassName('tab-links');
     // var tabcontents = document.getElementsByClassName('tab-contents');
 
@@ -14,7 +14,7 @@ function About() {
     //     document.getElementById(tabname).classList.add("active-tab");
     // }
     return (
-        <div id="about">
+        <div id="about" className={`${props.theme ? 'theme__light' : 'theme__dark'}`}>
             <div className="container">
                 <div className="row">
                     <div className="about-col-1">
@@ -59,4 +59,4 @@ function About() {
     )
 }
 
-export default transition(About);
+export default About;
