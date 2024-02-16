@@ -1,10 +1,6 @@
-import transition from "./transition"
 function Home(props) {
-    console.log(props.theme);
-    
-
     return (
-        <div id="header" className={`${props.theme ? 'theme__light' : 'theme__dark'}`}>
+        <div id="header" className={`animate-in fade-in-25 animate-out duration-1000 flex ${props.theme ? 'theme__light' : 'theme__dark'}`}>
             <div className="container">
                 <div className="header-text">
                     <p>Front-End Web Developer</p>

@@ -1,7 +1,6 @@
-import transition from "./transition"
 function Projects(props) {
     return (
-        <div id="projects" className={`${props.theme ? 'theme__light' : 'theme__dark'}`}>
+        <div id="projects" className={`animate-in fade-in duration-1000 ${props.theme ? 'theme__light' : 'theme__dark'}`}>
             <div className="container">
                 <h2 className="sub-title py-4 highlight">My Works</h2>
                 <div className="work-list">

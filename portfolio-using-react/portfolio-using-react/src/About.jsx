@@ -1,4 +1,3 @@
-import transition from "./transition"
 function About(props) {
     // var tablinks = document.getElementsByClassName('tab-links');
     // var tabcontents = document.getElementsByClassName('tab-contents');
@@ -14,7 +13,7 @@ function About(props) {
     //     document.getElementById(tabname).classList.add("active-tab");
     // }
     return (
-        <div id="about" className={`${props.theme ? 'theme__light' : 'theme__dark'}`}>
+        <div id="about" className={`animate-in fade-in duration-1000 ${props.theme ? 'theme__light' : 'theme__dark'}`}>
             <div className="container">
                 <div className="row">
                     <div className="about-col-1">

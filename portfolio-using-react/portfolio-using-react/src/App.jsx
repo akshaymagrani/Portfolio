@@ -6,7 +6,6 @@ import Projects from './Projects';
 import ContactMe from './ContactMe';
 import { useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 
 function App() {
   let location = useLocation();
@@ -17,14 +16,12 @@ function App() {
   return (
     <>
       <Nav handleTheme={handleTheme} theme={theme} />
-      <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home theme={theme} />} />
           <Route path="/about" element={<About theme={theme} />} />
           <Route path="/projects" element={<Projects theme={theme} />} />
           <Route path="/contactme" element={<ContactMe theme={theme} />} />
         </Routes>
-      </AnimatePresence>
     </>
   );
 }
