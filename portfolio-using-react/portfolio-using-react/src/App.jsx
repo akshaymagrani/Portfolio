@@ -1,9 +1,9 @@
 import './App.css';
-import Nav from './Nav';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
-import ContactMe from './ContactMe';
+import Nav from './components/Nav';
+import Home from './components//Home';
+import About from './components//About';
+import Projects from './components//Projects';
+import ContactMe from './components//ContactMe';
 import { useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
