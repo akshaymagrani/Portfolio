@@ -4,6 +4,7 @@ import Home from './components//Home';
 import About from './components//About';
 import Projects from './components//Projects';
 import ContactMe from './components//ContactMe';
+import Resume from './components/Resume';
 import { useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About theme={theme} />} />
           <Route path="/projects" element={<Projects theme={theme} />} />
           <Route path="/contactme" element={<ContactMe theme={theme} />} />
+          <Route path="/resume" element={<Resume theme={theme} />} />
         </Routes>
     </>
   );

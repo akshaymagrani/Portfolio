@@ -19,7 +19,7 @@ function About(props) {
                         <h2 className="sub-title py-4 highlight">About Me</h2>
                         <p className="max-w-96">
                             As a dedicated and detail-oriented Front-End Web Developer, I am passionate about 
-                            <span>crafting immersive and intuitive user experiences</span> 
+                            <span> crafting immersive and intuitive user experiences </span> 
                             through innovative and visually appealing web applications. With a foundation in HTML, CSS, and JavaScript,
                             I specialize in leveraging modern frameworks like React to bring designs to life.
                         </p>
@@ -35,6 +35,14 @@ function About(props) {
                             <ul>
                                 <li><span>UI/UX</span><br />Developing Web/App interfaces</li>
                                 <li><span>Web Development</span><br />Web App Development</li>
+                                <li>
+                                    • Programming Languages − HTML5, CSS3, Python, C, JavaScript, MATLAB, SQL
+                                    • Frameworks/Libraries − React JS, SASS, Tailwind CSS
+                                    • Databases − MySQL, MongoDB
+                                    • Developer Tools − Linux, Git, GitHub, VSCode
+                                    • Other Skills − Data Structures and Algorithms, OOP, Computer Fundamentals
+                                    • Languages − French – A1, German – A1
+                                </li>
                             </ul>
                         </div>
                     }
@@ -42,6 +50,12 @@ function About(props) {
                         tab == 'experience' && <div className="tab-contents" id="experience">
                             <ul>
                                 <li><span>2018 - Current</span><br />KLT Automotive and Tubular Products Ltd | Development Engineer</li>
+                                <li><span>
+                                    • Led 2 key projects and assisted in 4 other projects while managing timelines and meeting deadlines within budgetary limits.
+                                    • Assessed vendors to confirm business and labor practices aligned with company standards.
+                                    • Conducted feasibility research prior to beginning new projects.
+                                    • Defined project scopes and schedules.
+                                </span></li>
                             </ul>
                         </div>
                     }

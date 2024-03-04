@@ -72,6 +72,16 @@ export default function Nav(props) {
                                         : "pending"
                             }>Contact
                     </NavLink>
+                    <NavLink
+                        to='/resume'
+                        className={({ isActive, isPending }) =>
+                            isActive
+                                ? "active"
+                                : isPending
+                                    ? "pending"
+                                    : "pending"
+                        }>Resume
+                    </NavLink>
                     <li>
                         <a href="https://1drv.ms/w/s!AmYHJtACmlBbik6nvntNLDwePjXa?e=Num1Df" className={`${props.theme ? 'border-black text-black' : 'dark:border-white dark:text-white'} border p-3 rounded`} target="_blank">Download CV
                         </a>

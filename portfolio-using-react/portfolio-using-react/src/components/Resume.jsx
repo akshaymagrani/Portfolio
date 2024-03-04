@@ -1,35 +1,35 @@
-export function Resume() {
+export default function Resume() {
     return (
-        <>
-            <h1>Akshaykumar Magrani</h1>
+        <div className="pt-[90px]">
+            <h1 className="text-3xl">Akshaykumar Magrani</h1>
             Email: akshaymagrani1@gmail.com | Phone No.: (+91) 8830743477 | LinkedIn: @akshay-magrani | Location:
             Palghar | Portfolio: akshay-magrani
-            Projects:
+            <h2>Projects:</h2>
             • Multi-Step-Form:
-            − Developed a responsive multi-step form using HTML, CSS, JavaScript, React, and Tailwind CSS.
-            − Successfully implemented a user-friendly form for enhanced data collection.
+            Developed a responsive multi-step form using HTML, CSS, JavaScript, React, and Tailwind CSS.
+            Successfully implemented a user-friendly form for enhanced data collection.
             • Responsive Landing Page:
-            − Created a visually appealing and responsive landing page using HTML, CSS, and JavaScript.
-            − Applied the latest design trends for an engaging user experience.
+            Created a visually appealing and responsive landing page using HTML, CSS, and JavaScript.
+            Applied the latest design trends for an engaging user experience.
             • Social Media Dashboard Theme Changer:
-            − Built a social media dashboard with a toggle button to switch between light and dark modes.
-            − Implemented dynamic styling using HTML, CSS, and JavaScript.
+            Built a social media dashboard with a toggle button to switch between light and dark modes.
+            Implemented dynamic styling using HTML, CSS, and JavaScript.
             • Countries around the World:
-            − Developed a responsive web page using API, HTML, CSS, and JavaScript to display information about
+            Developed a responsive web page using API, HTML, CSS, and JavaScript to display information about
             countries.
-            − Utilized external APIs for real-time data.
-            Skills:
+            Utilized external APIs for real-time data.
+            <h2>Skills:</h2>
             • Languages: HTML, CSS, JavaScript.
             • Frameworks: React JS.
             • CSS Frameworks: Tailwind CSS, Bootstrap
             • Version Control: Git and GitHub.
-            Education:
+            <h2>Education:</h2>
             B.Sc. in Computer Science | Mumbai University 2023 – 2026
             B.E in Mechanical Engineering | Mumbai University 2013 – 2017
             • Secured an aggregate of 6.66 CGPA.
             H.S.C | Sonopant Dandekar College, Palghar | 2011 – 2013
             • Secured 85.3%. Ranked 1st in college.
-            Work Experience:
+            <h2>Work Experience:</h2>
             Development Engineer KLT Automotive and Tubular Products Ltd. | 5 years
             • Implemented a Part Status Dashboard in Excel for the Press Shop team to forecast part requirements for
             2 days in advance resulting in 80% efficiency in tracking the status of parts. This streamlined the existing
@@ -42,6 +42,6 @@ export function Resume() {
             Mahindra chassis development projects.
             • Trained 2 new hires on project procedures.
             • Consistently received positive feedback from team members and management.
-        </>
+        </div>
     )
 }
