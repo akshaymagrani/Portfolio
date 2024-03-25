@@ -1,4 +1,5 @@
 import { useState } from "react";
+import illustration from '../assets/an illustration of an innovative entrepreneur man .jpg';
 
 function About(props) {
     const [tab, changeTab] = useState('skills');
@@ -13,7 +14,7 @@ function About(props) {
             <div className="container">
                 <div className="row">
                     <div className="about-col-1">
-                        <img src="./src/assets/an illustration of an innovative entrepreneur man .jpg" alt="image" className="about-me-img" />
+                        <img src={illustration} alt="image" className="about-me-img" />
                     </div>
                     <div className="about-col-2">
                         <h2 className="sub-title py-4 highlight">About Me</h2>

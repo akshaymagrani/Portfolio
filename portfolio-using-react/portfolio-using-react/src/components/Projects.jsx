@@ -1,3 +1,7 @@
+import formDesktop from '../assets/multi-step-form-destop.jpg';
+import worldDestop from '../assets/gael-gaborel-orbisterrae-G_MCcG2YqPQ-unsplash.jpg';
+import socialDesktop from '../assets/alexander-shatov-mr4JG4SYOF8-unsplash.jpg';
+
 function Projects(props) {
     return (
         <div id="projects" className={`animate-in fade-in duration-1000 ${props.theme ? 'theme__light' : 'theme__dark'}`}>
@@ -5,7 +9,7 @@ function Projects(props) {
                 <h2 className="sub-title py-4 highlight">My Works</h2>
                 <div className="work-list">
                     <div className="work sm-max-w-[350px]">
-                        <img src="./src/assets/multi-step-form-destop.jpg" alt="image1" />
+                        <img src={formDesktop} alt="image1" />
                         <div className="layer">
                             <h3 className="mt-4 text-lg font-semibold">Multi-Step Form</h3>
                             <p className="description">
@@ -15,7 +19,7 @@ function Projects(props) {
                         </div>
                     </div>
                     <div className="work sm-max-w-[350px]">
-                        <img src="./src/assets/gael-gaborel-orbisterrae-G_MCcG2YqPQ-unsplash.jpg" alt="image3" />
+                        <img src={worldDestop} alt="image3" />
                         <div className="layer">
                             <h3 className="mt-4 text-lg font-semibold">Countries around the world</h3>
                             <p className="description">
@@ -27,7 +31,7 @@ function Projects(props) {
                         </div>
                     </div>
                     <div className="work sm-max-w-[350px]">
-                        <img src="./src/assets/alexander-shatov-mr4JG4SYOF8-unsplash.jpg" alt="image1" />
+                        <img src={socialDesktop} alt="image1" />
                         <div className="layer">
                             <h3 className="mt-4 text-lg font-semibold">Social Media Tracker</h3>
                             <p className="description">
