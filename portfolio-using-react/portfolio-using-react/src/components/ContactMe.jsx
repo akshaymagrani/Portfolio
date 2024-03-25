@@ -7,11 +7,11 @@ function ContactMe(props) {
                     <div className="row">
                         <div className="contact-left md:relative">
                             <h2 className="sub-title py-4">Contact Me</h2>
-                            <div className="social-icons">
+                            <div className="social-icons mb-3">
                                 <a href="" title="icons">
                                     <button
                                         type="button"
-                                        class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                                        className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
                                         style={{ backgroundColor: '#ff004f'}}>
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -54,11 +54,11 @@ function ContactMe(props) {
                                     </button>
                                 </a>
                             </div>
-                            <a href="https://1drv.ms/w/s!AmYHJtACmlBbik6nvntNLDwePjXa?e=Num1Df" className="md:absolute md:bottom-0 md:left-0 btn btn2" target="_blank">Download CV</a>
+                            <a href="https://onedrive.live.com/edit.aspx?resid=5B509A02D0260766!2374&cid=5b509a02d0260766&CT=1711366868362&OR=ItemsView" className="md:absolute md:bottom-0 md:left-0 btn btn2" target="_blank">Download CV</a>
                         </div>
                         <div className="contact-right">
-                            <form action="https://formsubmit.co/akshaymagrani1@gmail.com">
-                                <input type="text" name="Name" placeholder="Your Name" required autoComplete="name" />
+                            <form action="https://formsubmit.co/akshaymagrani1@gmail.com" method="POST">
+                                <input type="text" name="Name" placeholder="Your Name" required autoComplete="name" className="mt-6"/>
                                 <input type="email" name="email" placeholder="Your Email" required autoComplete="email" />
                                 <textarea type="text" name="Name" placeholder="Your Message"></textarea>
                                 <button type="submit" className="btn btn2" title="Submit Button">Submit</button>

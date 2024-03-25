@@ -22,7 +22,7 @@ function App() {
           <Route path="/about" element={<About theme={theme} />} />
           <Route path="/projects" element={<Projects theme={theme} />} />
           <Route path="/contactme" element={<ContactMe theme={theme} />} />
-          <Route path="/resume" element={<Resume theme={theme} />} />
+          {/* <Route path="/resume" element={<Resume theme={theme} />} /> */}
         </Routes>
     </>
   );

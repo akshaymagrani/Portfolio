@@ -98,17 +98,6 @@ nav ul li a:hover::after {
   position: relative;
 }
 
-.highlight:before{
-  content: "";
-  width: 50%;
-  height: 20px;
-  background: #ff004f;
-  position: absolute;
-  left: 0;
-  bottom: 35px;
-  z-index: -1;
-}
-
 nav.theme__dark{
   background-color: #0C0404;
   color: white;
@@ -117,7 +106,7 @@ nav.theme__dark{
 nav.theme__dark svg {
   fill: white;
 }
-nav.theme__light svg {
+nav.theme__light .hamburger {
   fill: black;
 }
 
@@ -170,7 +159,7 @@ nav.theme__light, div.theme__light{
 
 .tab-links {
   margin-right: 50px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -192,12 +181,10 @@ nav.theme__light, div.theme__light{
 }
 
 .tab-contents ul li {
-  list-style: none;
   margin: 10px 0;
 }
 
 .tab-contents ul li span {
-  color: #ff004f;
   font-size: 14px;
 }
 
@@ -294,7 +281,7 @@ nav.theme__light, div.theme__light{
 
 .layer a {
   margin-top: 20px;
-  color: #ff004f;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -305,8 +292,9 @@ nav.theme__light, div.theme__light{
 }
 
 .work:hover .layer {
-  width: 50%;
+  width: 100%;
   display: flex;
+  color: white;
 }
 
 .btn {
@@ -382,7 +370,7 @@ form textarea {
   border: 1px solid grey;
   outline: none;
   padding: 15px;
-  margin: 15px 0;
+  margin: 15px 0 0;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -390,7 +378,7 @@ form textarea {
 form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
@@ -405,7 +393,6 @@ nav .fas {
   }
 
   .header-text {
-    margin-top: 100%;
     font-size: 16px;
   }
 
@@ -420,8 +407,8 @@ nav .fas {
     z-index: 2;
   }
   .times, .hamburger{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 
   .close {
@@ -466,13 +453,16 @@ nav .fas {
   .about-col-1 {
     margin: 30px 0;
   }
+  .about-col-1 img{
+    max-width: 375px;
+  }
 
   .about-col-2 {
     font-size: 14px;
   }
 
   .tab-links {
-    font-size: 16px;
+    font-size: 1.2rem;
     margin-right: 20px;
   }
 
