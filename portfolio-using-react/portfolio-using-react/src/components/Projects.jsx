@@ -9,36 +9,41 @@ function Projects(props) {
                 <h2 className="sub-title py-4 highlight">My Works</h2>
                 <div className="work-list">
                     <div className="work sm-max-w-[350px]">
-                        <img src={formDesktop} alt="image1" />
-                        <div className="layer">
-                            <h3 className="mt-4 text-lg font-semibold">Multi-Step Form</h3>
-                            <p className="description">
-                                A responsive multi-step form using HTML, CSS, JavaScript, React and Tailwind CSS for enhanced data collection.
-                            </p>
-                            <a href="https://web-dev-i-multi-step-form-using-react.vercel.app/" title="link-icon"><i className="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <a href="https://web-dev-i-multi-step-form-using-react.vercel.app/" title="link-icon">
+                            <img src={formDesktop} alt="image1" />
+                            <div className="layer">
+                                <h3 className="mt-4 text-lg font-semibold">Multi-Step Form</h3>
+                                <p className="description">
+                                    A responsive multi-step form using HTML, CSS, JavaScript, React and Tailwind CSS for enhanced data collection.
+                                </p>
+                                <i className="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
                     </div>
                     <div className="work sm-max-w-[350px]">
-                        <img src={worldDestop} alt="image3" />
-                        <div className="layer">
-                            <h3 className="mt-4 text-lg font-semibold">Countries around the world</h3>
-                            <p className="description">
-                                A responsive web page using API, HTML, CSS and JavaScript to display information about countries.
-                                Utilized external APIs for real-time data.
-                            </p>
-                            <a href="https://web-dev-a-rest-countries-api-with-color-theme-switcher.vercel.app/" title="link-icon"><i
-                                className="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <a href="https://web-dev-a-rest-countries-api-with-color-theme-switcher.vercel.app/" title="link-icon">
+                            <img src={worldDestop} alt="image3" />
+                            <div className="layer">
+                                <h3 className="mt-4 text-lg font-semibold">Countries around the world</h3>
+                                <p className="description">
+                                    A responsive web page using API, HTML, CSS and JavaScript to display information about countries.
+                                    Utilized external APIs for real-time data.
+                                </p>
+                                <i className="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
                     </div>
                     <div className="work sm-max-w-[350px]">
-                        <img src={socialDesktop} alt="image1" />
-                        <div className="layer">
-                            <h3 className="mt-4 text-lg font-semibold">Social Media Tracker</h3>
-                            <p className="description">
-                                Visually appealing and responsive landing page using HTML, CSS and JavaScript.
-                            </p>
-                            <a href="https://web-dev-social-media-dashboard-theme-change-etesjobyo.now.sh/" title="link-icon"><i className="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <a href="https://web-dev-social-media-dashboard-theme-change-etesjobyo.now.sh/" title="link-icon">
+                            <img src={socialDesktop} alt="image1" />
+                            <div className="layer">
+                                <h3 className="mt-4 text-lg font-semibold">Social Media Tracker</h3>
+                                <p className="description">
+                                    Visually appealing and responsive landing page using HTML, CSS and JavaScript.
+                                </p>
+                                <i className="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
